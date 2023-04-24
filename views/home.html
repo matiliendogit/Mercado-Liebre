@@ -44,9 +44,47 @@
 
         </nav>
 
-        
-
     </header>
+
+    <form action="/crear-producto" method="POST" class="create-form">
+
+        <div class="form-control">
+            <label>Nombre del producto:</label>
+            <input type="text" name="product-name" class="control">
+        </div>
+        <div class="form-control">
+            <label>Precio:</label>
+            <input type="number" name="price" placeholder="$xxx.x" class="control">
+        </div>
+        <div class="form-control">
+            <label>Categoría:</label>
+            <select name="categoria" id="" class="control">
+                <option value="hogar">Hogar</option>
+                <option value="electro">Electro</option>
+                <option value="indumentaria">Indumentaria</option>
+            </select>
+        </div>
+        <div class="form-control">
+            <label>Ciudad:</label>
+            <select name="Ciudad" id="" class="control">
+                <option value="cba">Córdoba</option>
+                <option value="bsas">Buenos Aires</option>
+                <option value="ros">Rosario</option>
+            </select>
+        </div>
+        <div class="form-control">
+            <label>Descripción del producto</label>
+            <textarea name="descripcion-del-producto" id="descripcion-del-producto" cols="30" rows="10" class="control" placeholder="Escriba aquí"></textarea>
+        </div>
+        <div class="form-control">
+            <label>Tiene descuento:</label>
+            <input type="radio" name="on-sale">
+        </div>
+
+        <button type="submit" class="form-button">Guardar</button>
+        <button type="reset" class="form-button">Resetear</button>
+        
+    </form>
 
     <div class="banner">
         <img src="img\img-home-banner.jpg" alt="banner">
