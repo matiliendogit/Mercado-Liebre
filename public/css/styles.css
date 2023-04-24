@@ -3,6 +3,8 @@
 
 *{
     box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
 }
 
 body{
@@ -45,6 +47,7 @@ body{
 
 .header-search{
     width: 100%;
+    display: none;
     padding-left: 20px;
 }
 
@@ -104,6 +107,7 @@ input::placeholder{
 
 .create-form{
     padding: 20px 15px;
+    display: none;
 }
 
 .form-control{
@@ -135,7 +139,7 @@ input::placeholder{
     padding: 0px;
     margin-bottom: 0px;
     width: 100%;
-    height: 100px;
+    height: 20%;
 }
 
 .banner img{
@@ -168,7 +172,7 @@ h3 {
     width: 100%;
 }
 
-section{
+main section{
     width: 100vw;
     text-align: center;
     padding: 5px;
@@ -180,7 +184,7 @@ section{
 
 article{
     text-align: center;
-    width: 90%;
+    max-width: 315px;
     height: fit-content;
     background-color: white;
     margin-right: 0px;
@@ -189,7 +193,7 @@ article{
     margin-bottom: 10px;    
 }
 
-.content-img-productos{
+.content-img-products{
     width: 100%;
     text-align: center;
     margin: 0px;
@@ -200,7 +204,7 @@ article{
     margin-bottom: 10px;
 }
 
-.info-articulos{
+.info-articles{
     width: 100%;
     height: fit-content;
     margin-top: 5px;
@@ -208,26 +212,35 @@ article{
     margin: 0px;
     text-align: left;
     padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:left;
     
 }
 
 .circulo-envio{
-    width: 43px;
-    height: 37px;
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
     border-radius: 50%;
-    border: solid 1px #39b54a;
-    text-align: left;
-    padding: 1%; 
+    position: relative;
+    right: -280px;
+    top: 15px;
 }
 
 .precios{
+    width: 30%;
     font-size: 18px;
     margin-top: 2px;
     margin-bottom: 2px;
-    
 }
 
 .descuentos{
+    width: 70%;
     font-size: 16px;
     margin-top: 2px;
     margin-bottom: 10px;
@@ -238,16 +251,11 @@ article{
     font-size: 100%;
     color: #666;
     text-align: left;
-    margin-top: 30px;
+    margin-top: 10px;
     margin-bottom: 2px;
-    content-visibility: hidden;
 }
 
-footer p{
-    padding-left: 15%;
-    padding-right: 15%;
-    margin-bottom: 30px;
-}
+
 
 footer h3{
     font-size: 16px;
@@ -258,6 +266,8 @@ footer h3{
 footer p{
     font-size: 12px;
     color: #666;
+    text-align: center;
+    max-width: 100%;
 }
 
 .iconos-footer{
@@ -265,6 +275,7 @@ footer p{
    margin-bottom: 10px;
    color: #1259c3;
    font-size: 2em;
+   display: block;
 }
 
 .copyright{
@@ -319,6 +330,14 @@ footer p{
     .main-navbar li{
         margin: 10px 5px;
     }
+
+    .header-search{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-left: 20px;
+    }
 }
 
 @media (min-width: 1199px){
@@ -340,6 +359,13 @@ footer p{
         max-width: none;
         font-size: 20px;
         margin: 0px;
+    }
+    .header-search{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-left: 20px;
     }
     .main-navbar li{
         margin: 15px 5px;
