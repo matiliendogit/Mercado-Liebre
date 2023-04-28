@@ -6,10 +6,21 @@ const app = express();
 const publicPath = path.resolve(__dirname, './public');
 app.use(express.static(publicPath));
 
-app.listen(3001, () => {
-    console.log('Server on-line on port 3001');
-});
 
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '/views/home.html'));
+});
+
+app.get('/register', (req, res) => {
+    console.log('register');
+    res.sendFile(path.join(__dirname, '/views/register.html'));
+});
+
+app.get('/login', (req, res) => {
+    console.log('login');
+    res.sendFile(path.join(__dirname, '/views/login.html'));
+});
+
+app.listen(3001, () => {
+    console.log('Server on-line on port 3001');
 });

@@ -43,7 +43,7 @@
             </ul>
 
             <ul class="login">
-                <li><a href="#">Creá tu cuenta<i class="fa-regular fa-address-card"></i></a></li>
+                <li><a href="/register">Creá tu cuenta<i class="fa-regular fa-address-card"></i></a></li>
                 <li><a href="#">Ingresá <i class="fa-solid fa-arrow-right-to-bracket"></i></a></li>
                 <li><a href="#">Mis compras <i class="fa-solid fa-basket-shopping"></i></a></li>
             </ul>
@@ -51,46 +51,6 @@
         </nav>
 
     </header>
-
-    <form action="/crear-producto" method="POST" class="create-form">
-
-        <div class="form-control">
-            <label>Nombre del producto:</label>
-            <input type="text" name="product-name" class="control">
-        </div>
-        <div class="form-control">
-            <label>Precio:</label>
-            <input type="number" name="price" placeholder="$xxx.x" class="control">
-        </div>
-        <div class="form-control">
-            <label>Categoría:</label>
-            <select name="categoria" id="" class="control">
-                <option value="hogar">Hogar</option>
-                <option value="electro">Electro</option>
-                <option value="indumentaria">Indumentaria</option>
-            </select>
-        </div>
-        <div class="form-control">
-            <label>Ciudad:</label>
-            <select name="Ciudad" id="" class="control">
-                <option value="cba">Córdoba</option>
-                <option value="bsas">Buenos Aires</option>
-                <option value="ros">Rosario</option>
-            </select>
-        </div>
-        <div class="form-control">
-            <label>Descripción del producto</label>
-            <textarea name="descripcion-del-producto" id="descripcion-del-producto" cols="30" rows="10" class="control" placeholder="Escriba aquí"></textarea>
-        </div>
-        <div class="form-control">
-            <label>Tiene descuento:</label>
-            <input type="radio" name="on-sale">
-        </div>
-
-        <button type="submit" class="form-button">Guardar</button>
-        <button type="reset" class="form-button">Resetear</button>
-        
-    </form>
 
     <div class="banner">
         <img src="img\img-home-banner.jpg" alt="banner">
@@ -107,13 +67,11 @@
                 <div class="content-img-products">
                     <img class="imgs-prodcutos" src="img\img-cafetera-moulinex.jpg" alt="img-cafetera-moulinex">
                     </div>
-
-                <div class="circulo-envio">
-                        <i class="fa-solid fa-truck" style="color: #39b54a;"></i>
-                </div> 
                 
                 <div class="info-articles">
-                    
+                    <div class="circulo-envio">
+                        <i class="fa-solid fa-truck" style="color: #39b54a;"></i>
+                    </div> 
                     <p class="precios">$6.770</p>
                     <p class="descuentos">40% OFF</p>
                     <h4 class="descripciones">Cafetera Moulinex</h4>
