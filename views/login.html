@@ -20,7 +20,7 @@
             
             <div class="header-search">
                     
-                <input type="text" placeholder="Buscar productos, marcas" autocomplete="off" name ="buscar-prodcutos" id="input-buscador-header">
+                <input type="text" placeholder="Buscar productos, marcas y más" autocomplete="off" name ="buscar-prodcutos" id="input-buscador-header">
                 <i id="lupa" class="fa-solid fa-magnifying-glass"></i>
             </div>
             <h2 class="copy-header">
@@ -55,10 +55,29 @@
         </nav>
 
     </header>
+<!-- -------- MAIN FORM LOGIN ------------>
+    <main>
 
-    <form action="/crear-producto" method="POST" class="create-form">
+        <h3>Ingresa a tu cuenta</h3>
+        
+        <form action="/" method="get" class="create-form">
 
-    </form>
+            <div class="form-div">
+                <label for="user-name">Nombre de Usuario</label>
+                <input type="text" name="user-name" id="user-name" placeholder="Nombre de usuario" class="form-inputs">
+            </div>
+           
+            <div class="form-div">
+                <label>Introduzca su contraseña:</label>
+                <input type="password" name="password" placeholder="Contraseña" class="form-inputs">
+            </div>
+
+            <button type="submit" class="form-button-submit">Login</button>
+
+            <div id="error-nombre" style="display:none;color:red;">El nombre debe tener al menos dos caracteres</div>
+       
+        </form>
+    </main>
 
     <!-- -------FOOTER------- -->
     <footer>
