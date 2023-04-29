@@ -11,20 +11,25 @@
     <title>Mercado Liebre</title>
 </head>
 <body>
-    <header class="main-header">
+     <!-- HEADER MAIN HOME -->
+     <header class="main-header">
 
         <div class="main-top-bar">
 
             <img class="logo" src="/img/logo-mercado-liebre.svg" alt="Logo de Mercado Libre">
             
-            <label class="header-search">
-                    <input type="text" placeholder="Buscar productos, marcas" autocomplete="off" name ="buscar-prodcutos" id="input-buscador-header" >
-                    <div class="contenedor-lupa"><i id="lupa" class="fa-solid fa-magnifying-glass"></i></div>
-            </label>
-
+            <div class="header-search">
+                    
+                <input type="text" placeholder="Buscar productos, marcas" autocomplete="off" name ="buscar-prodcutos" id="input-buscador-header">
+                <i id="lupa" class="fa-solid fa-magnifying-glass"></i>
+            </div>
             <h2 class="copy-header">
                 <i class="fa-solid fa-hand-holding-dollar"></i>Comprá en cuotas y sin tarjeta de crédito
-            </h2>  
+            </h2>   
+                
+        </div>
+
+        <!-- Header Hambuerguer y Nav Bar -->    
             
         </div>
 
@@ -42,9 +47,9 @@
             </ul>
 
             <ul class="login">
-                <li><a href="#">Creá tu cuenta<i class="fa-regular fa-address-card"></i></a></li>
-                <li><a href="#">Ingresá <i class="fa-solid fa-arrow-right-to-bracket"></i></a></li>
-                <li><a href="#">Mis compras <i class="fa-solid fa-basket-shopping"></i></a></li>
+                <li><a href="/register">Creá tu cuenta<i class="fa-regular fa-address-card"></i></a></li>
+                <li><a href="/login">Ingresá <i class="fa-solid fa-arrow-right-to-bracket"></i></a></li>
+                <li><a href="/product-cart">Mis compras <i class="fa-solid fa-basket-shopping"></i></a></li>
             </ul>
 
         </nav>
@@ -95,7 +100,7 @@
     </main>
 
 
-
+    <!-- -------FOOTER------- -->
     <footer>
 
         <section>
@@ -144,7 +149,6 @@
             </div>
 
     </footer>   
-
     
 </body>
 </html>

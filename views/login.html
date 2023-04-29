@@ -7,23 +7,29 @@
     <script src="https://kit.fontawesome.com/bd67e0aa15.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/login.css">
     <title>Mercado Liebre</title>
 </head>
 <body>
-    <header class="main-header">
+     <!-- HEADER MAIN HOME -->
+     <header class="main-header">
 
         <div class="main-top-bar">
 
             <img class="logo" src="/img/logo-mercado-liebre.svg" alt="Logo de Mercado Libre">
             
-            <label class="header-search">
-                    <input type="text" placeholder="Buscar productos, marcas" autocomplete="off" name ="buscar-prodcutos" id="input-buscador-header" >
-                    <div class="contenedor-lupa"><i id="lupa" class="fa-solid fa-magnifying-glass"></i></div>
-            </label>
-
+            <div class="header-search">
+                    
+                <input type="text" placeholder="Buscar productos, marcas" autocomplete="off" name ="buscar-prodcutos" id="input-buscador-header">
+                <i id="lupa" class="fa-solid fa-magnifying-glass"></i>
+            </div>
             <h2 class="copy-header">
                 <i class="fa-solid fa-hand-holding-dollar"></i>Comprá en cuotas y sin tarjeta de crédito
-            </h2>  
+            </h2>   
+                
+        </div>
+
+        <!-- Header Hambuerguer y Nav Bar -->    
             
         </div>
 
@@ -41,9 +47,9 @@
             </ul>
 
             <ul class="login">
-                <li><a href="#">Creá tu cuenta<i class="fa-regular fa-address-card"></i></a></li>
-                <li><a href="#">Ingresá <i class="fa-solid fa-arrow-right-to-bracket"></i></a></li>
-                <li><a href="#">Mis compras <i class="fa-solid fa-basket-shopping"></i></a></li>
+                <li><a href="/register">Creá tu cuenta<i class="fa-regular fa-address-card"></i></a></li>
+                <li><a href="/login">Ingresá <i class="fa-solid fa-arrow-right-to-bracket"></i></a></li>
+                <li><a href="/product-cart">Mis compras <i class="fa-solid fa-basket-shopping"></i></a></li>
             </ul>
 
         </nav>
@@ -52,45 +58,9 @@
 
     <form action="/crear-producto" method="POST" class="create-form">
 
-        <div class="form-control">
-            <label>Nombre del producto:</label>
-            <input type="text" name="product-name" class="control">
-        </div>
-        <div class="form-control">
-            <label>Precio:</label>
-            <input type="number" name="price" placeholder="$xxx.x" class="control">
-        </div>
-        <div class="form-control">
-            <label>Categoría:</label>
-            <select name="categoria" id="" class="control">
-                <option value="hogar">Hogar</option>
-                <option value="electro">Electro</option>
-                <option value="indumentaria">Indumentaria</option>
-            </select>
-        </div>
-        <div class="form-control">
-            <label>Ciudad:</label>
-            <select name="Ciudad" id="" class="control">
-                <option value="cba">Córdoba</option>
-                <option value="bsas">Buenos Aires</option>
-                <option value="ros">Rosario</option>
-            </select>
-        </div>
-        <div class="form-control">
-            <label>Descripción del producto</label>
-            <textarea name="descripcion-del-producto" id="descripcion-del-producto" cols="30" rows="10" class="control" placeholder="Escriba aquí"></textarea>
-        </div>
-        <div class="form-control">
-            <label>Tiene descuento:</label>
-            <input type="radio" name="on-sale">
-        </div>
-
-        <button type="submit" class="form-button">Guardar</button>
-        <button type="reset" class="form-button">Resetear</button>
-        
     </form>
 
-
+    <!-- -------FOOTER------- -->
     <footer>
 
         <section>
@@ -139,7 +109,6 @@
             </div>
 
     </footer>   
-
-    
+        
 </body>
 </html>

@@ -12,12 +12,10 @@ app.get('/', (req, res) => {
 });
 
 app.get('/register', (req, res) => {
-    console.log('register');
     res.sendFile(path.join(__dirname, '/views/register.html'));
 });
 
 app.get('/login', (req, res) => {
-    console.log('login');
     res.sendFile(path.join(__dirname, '/views/login.html'));
 });
 
