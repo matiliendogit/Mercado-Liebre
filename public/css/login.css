@@ -2,6 +2,7 @@
 /* ---------MAIN FOMR LOGIN ------- */
 
 main{
+    margin-top: 188px;
     width: 100vw;
     height: 600px;
 }
@@ -43,7 +44,6 @@ h3{
     padding: 8px;
     border-radius: 15px;
     border: 0;
-
 }
 
 .form-button-submit{
