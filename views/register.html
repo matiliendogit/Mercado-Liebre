@@ -10,13 +10,16 @@
     <link rel="stylesheet" href="/css/register-styles.css">
     <title>Mercado Liebre</title>
 </head>
+
 <body>
+
     <!-- HEADER MAIN HOME -->
+    
     <header class="main-header">
 
         <div class="main-top-bar">
 
-            <img class="logo" src="/img/logo-mercado-liebre.svg" alt="Logo de Mercado Libre">
+            <a href="/"><img class="logo" src="/img/logo-mercado-liebre.svg" alt="Logo de Mercado Libre"></a>
             
             <div class="header-search">
                     
@@ -40,9 +43,9 @@
         <nav class="main-navbar">
 
             <ul class="navbar">
-                <li><a href="#">Ofertas</a></li>
+                <li><a href="#ofertas">Ofertas</a></li>
                 <li><a href="#">Tiendas Oficiales</a></li>
-                <li><a href="#">Vender</a></li>
+                <li><a href="/create-product">Vender</a></li>
                 <li><a href="#">Ayuda</a></li>
             </ul>
 
@@ -60,15 +63,15 @@
 
         <h3>Formulario de Registro</h3>
         
-        <form action="/" method="get" class="create-form">
+        <form action="/" method="get" class="register-form">
 
             <div class="form-div">
                 <label>Nombre y Apellido</label>
-                <input type="text" name="first-and-last-names" placeholder="Nombre y apellido" class="form-inputs">
+                <input type="text" name="first-and-last-names" placeholder="Nombre y apellido" class="form-inputs" minlength="6">
             </div>
             <div class="form-div">
                 <label>Nombre de Usuario</label>
-                <input type="text" name="user-name" placeholder="Nombre de usuario" class="form-inputs">
+                <input type="text" name="user-name" placeholder="Nombre de usuario" class="form-inputs" minlength="5">
             </div>
             <div class="form-div">
                 <label>Correo electrónico</label>
@@ -83,7 +86,7 @@
                 <input type="text" name="adress" placeholder="Domicilio" class="form-inputs">
             </div>
             <div class="form-div">
-                <label class="label-mobile">Perfil de usuario</label>
+                <label class="label-mobile" id="sub-titiles-register">Perfil de usuario</label>
                 <div id="div-radio">   
                     <label class="radio-labels" for="user-type">Comprador</label><input type="radio" name="user-type" class="form-inputs" value="Comprador">
                         
@@ -92,7 +95,7 @@
             </div>
             <div class="form-div">
 
-                <label class="label-mobile">Intereses</label>
+                <label class="label-mobile" id="sub-titiles-register">Intereses</label>
 
                 <div id="div-checkbox">
                     <label class="label-mobile">Hogar</label><input type="checkbox" class="form-inputs" name="intereses" id="intereses" value="hogar">

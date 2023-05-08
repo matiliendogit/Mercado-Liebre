@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/bd67e0aa15.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/css/normalize.css">
-    <link rel="stylesheet" href="/css/create-product-styles.css">
     <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/create-product-styles.css">
     <title>Mercado Liebre</title>
 </head>
 <body>
@@ -16,11 +16,11 @@
 
         <div class="main-top-bar">
 
-            <img class="logo" src="/img/logo-mercado-liebre.svg" alt="Logo de Mercado Libre">
+            <a href="/"><img class="logo" src="/img/logo-mercado-liebre.svg" alt="Logo de Mercado Libre"></a>
             
             <div class="header-search">
                     
-                <input type="text" placeholder="Buscar productos, marcas" autocomplete="off" name ="buscar-prodcutos" id="input-buscador-header">
+                <input type="text" placeholder="Buscar productos, marcas y más" autocomplete="off" name ="buscar-prodcutos" id="input-buscador-header">
                 <i id="lupa" class="fa-solid fa-magnifying-glass"></i>
             </div>
             <h2 class="copy-header">
@@ -40,9 +40,9 @@
         <nav class="main-navbar">
 
             <ul class="navbar">
-                <li><a href="#">Ofertas</a></li>
+                <li><a href="#ofertas">Ofertas</a></li>
                 <li><a href="#">Tiendas Oficiales</a></li>
-                <li><a href="#">Vender</a></li>
+                <li><a href="/create-product">Vender</a></li>
                 <li><a href="#">Ayuda</a></li>
             </ul>
 
@@ -56,45 +56,58 @@
 
     </header>
 
-    <main>
-        
-        <form action="/crear-producto" method="POST" class="create-form">
+    <!-- -----------------MAIN FORM VENDER-------------- -->
 
-            <div class="form-control">
+    <main>
+
+        <h3>Crear producto para la venta</h3>
+        
+        <form action="/" method="GET" class="create-form">
+
+            <div class="form-div">
                 <label>Nombre del producto:</label>
-                <input type="text" name="product-name" class="control">
+                <input type="text" name="product-name" class="form-inputs" placeholder="Nombre del producto">
             </div>
-            <div class="form-control">
+            <div class="form-div">
                 <label>Precio:</label>
-                <input type="number" name="price" placeholder="$xxx.x" class="control">
+                <input type="number" name="price" placeholder="Precio ($550.2)" class="form-inputs">
             </div>
-            <div class="form-control">
-                <label>Categoría:</label>
-                <select name="categoria" id="" class="control">
+            <div class="form-div">
+                <label id="sub-titles">Categoría:</label>
+                <select name="categoria" id="" class="form-inputs">
                     <option value="hogar">Hogar</option>
                     <option value="electro">Electro</option>
                     <option value="indumentaria">Indumentaria</option>
                 </select>
             </div>
-            <div class="form-control">
-                <label>Ciudad:</label>
-                <select name="Ciudad" id="" class="control">
+            <div class="form-div">
+                <label id="sub-titles">Ciudad:</label>
+                <select name="Ciudad" id="" class="form-inputs">
                     <option value="cba">Córdoba</option>
                     <option value="bsas">Buenos Aires</option>
                     <option value="ros">Rosario</option>
                 </select>
             </div>
-            <div class="form-control">
-                <label>Descripción del producto</label>
-                <textarea name="descripcion-del-producto" id="descripcion-del-producto" cols="30" rows="10" class="control" placeholder="Escriba aquí"></textarea>
+            <div class="form-div">
+                <label id="sub-titles">Descripción del producto</label>
+                <textarea name="descripcion-del-producto" id="descripcion-del-producto" cols="30" rows="10" class="form-inputs" placeholder="Escriba aquí"></textarea>
             </div>
-            <div class="form-control">
-                <label>Tiene descuento:</label>
-                <input type="radio" name="on-sale">
+            <div class="form-div">
+                <label id="sub-titles">Tiene el descuento on-line:</label>
+                <div id="div-radio">   
+                    <label class="radio-labels" for="off-sale">25%</label><input type="radio" name="off-sale" class="form-inputs" value="0.25">
+
+                    <label class="radio-labels" for="off-sale">15%</label><input type="radio" name="off-sale" class="form-inputs" value="0.15">
+
+                    <label class="radio-labels" for="off-sale">10%</label><input type="radio" name="off-sale" class="form-inputs" value="0.10">
+
+                    <label class="radio-labels" for="off-sale">5%</label><input type="radio" name="off-sale" class="form-inputs" value="0.5">
+
+                    <label class="radio-labels" for="off-sale">Sin OFF</label><input type="radio" name="off-sale" class="form-inputs" value="-1">
             </div>
 
-            <button type="submit" class="form-button">Guardar</button>
-            <button type="reset" class="form-button">Resetear</button>
+            <button type="submit" class="form-button-submit">Guardar</button>
+            <button type="reset" class="form-button-reset">Resetear</button>
             
         </form>
         
@@ -102,51 +115,57 @@
 
 
     <!-- -------FOOTER------- -->
+    
     <footer>
 
-        <section>
+        <div class="footer-container">
 
-            <div class="iconos-footer">
-                <i class="fa-solid fa-credit-card"></i>
-                </div>
+            <section>
 
-            <div class="texto-footer">
-                <h3>Pagá con tarjeta o en efectivo</h3>
-                <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
-                    puntos de pago. ¡Y siempre es seguro!</p>
-                </div>
+                <div class="iconos-footer">
+                    <i class="fa-solid fa-credit-card"></i>
+                    </div>
 
-        </section>
+                <div class="texto-footer">
+                    <h3>Pagá con tarjeta o en efectivo</h3>
+                    <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
+                        puntos de pago. ¡Y siempre es seguro!</p>
+                    </div>
+                    
+            </section>
 
-        <section>
+            <section>
 
-            <div class="iconos-footer">
-                <i class="fa-solid fa-gift"></i>
-                </div>
+                <div class="iconos-footer">
+                    <i class="fa-solid fa-gift"></i>
+                    </div>
 
-            <div class="texto-footer">
-                <h3>Envío gratis desde $ 2.500</h3>
-                <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
-                    productos. Es un beneficio de Mercado Puntos.</p>
-                </div>
-        </section>
+                <div class="texto-footer">
+                    <h3>Envío gratis desde $ 2.500</h3>
+                    <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
+                        productos. Es un beneficio de Mercado Puntos.</p>
+                    </div>
 
-        <section>
+            </section>
 
-            <div class="iconos-footer">
-                <i class="fa-solid fa-user-shield"></i>
-                </div>
-            <div class="texto-footer">    
-                <h3>Seguridad, de principio a fin</h3>
-                <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
-                    porque estás siempre protegid@.</p>
-                </div>
+            <section>
 
-        </section>
+                <div class="iconos-footer">
+                    <i class="fa-solid fa-user-shield"></i>
+                    </div>
+                <div class="texto-footer">    
+                    <h3>Seguridad, de principio a fin</h3>
+                    <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
+                        porque estás siempre protegid@.</p>
+                    </div>
+
+            </section><br>
+
+        </div>
 
         <div>
             <p class="copyright">Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
-            </div>
+        </div>
 
     </footer>   
     

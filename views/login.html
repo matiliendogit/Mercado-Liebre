@@ -10,8 +10,11 @@
     <link rel="stylesheet" href="/css/login.css">
     <title>Mercado Liebre</title>
 </head>
+
 <body>
+
      <!-- HEADER MAIN HOME -->
+
      <header class="main-header">
 
         <div class="main-top-bar">
@@ -40,9 +43,9 @@
         <nav class="main-navbar">
 
             <ul class="navbar">
-                <li><a href="/#ofertas">Ofertas</a></li>
+                <li><a href="#ofertas">Ofertas</a></li>
                 <li><a href="#">Tiendas Oficiales</a></li>
-                <li><a href="#">Vender</a></li>
+                <li><a href="/create-product">Vender</a></li>
                 <li><a href="#">Ayuda</a></li>
             </ul>
 
@@ -66,13 +69,13 @@
 
             <div class="form-div">
                 <label for="user-name">Nombre de Usuario</label>
-                <input type="text" name="user-name" id="user-name" placeholder="Nombre de usuario" class="form-inputs">
+                <input type="text" name="user-name" id="user-name" placeholder="Nombre de usuario" class="form-inputs" minlength="4">
             </div>
             <span id="user-name-error" class="error-message">El nombre debe tener al menos 3 caracteres</span>
             
             <div class="form-div">
                 <label>Introduzca su contraseña:</label>
-                <input type="password" name="password" placeholder="Contraseña" class="form-inputs">
+                <input type="password" name="password" placeholder="Contraseña" class="form-inputs" minlength="6">
             </div>
             
             <button type="submit" class="form-button-submit">Login</button>

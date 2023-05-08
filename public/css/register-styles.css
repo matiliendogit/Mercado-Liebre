@@ -1,7 +1,7 @@
 
 /* -----------MAIN FORM REGISTER----------- */
 main{
-    margin-top: 188px;
+    margin-top: 230px;
 }
 
 h3{
@@ -9,7 +9,7 @@ h3{
     margin: 20px 0;
 }
 
-.create-form{
+.register-form{
     padding: 20px 15px;
     display: flex;
     align-items: stretch;
@@ -53,8 +53,25 @@ h3{
     transform: scale(1.1);
 }
 
+input[type="radio"]:hover, input[type="checkbox"]:hover{
+    box-shadow: 0px 0px 0px transparent
+}
+
+input[type="radio"]:focus, input[type="checkbox"]:focus {
+    outline: none;
+    transform: scale(1.5);
+}
+
+input[type="checkbox"]:checked {
+    transform: scale(1.5);
+}
+
 input[type="date"]{
     cursor: pointer;
+}
+
+#sub-titiles-register{
+    display: block;
 }
 
 #div-radio{
@@ -66,7 +83,9 @@ input[type="date"]{
 #div-radio label{
     font-weight: normal;
     font-style: normal;
+    display: block;
     margin: 0px 2px;
+    font-size: 17px;
 }
 
 #div-radio input{
@@ -91,10 +110,11 @@ input[type="date"]{
 }
 
 #div-checkbox label{
-    margin: 5px 2px;
+    display: block;
+    margin: 5px 5px;
     font-style: normal;
     font-weight: normal;
-    font-size: 15px;
+    font-size: 12px;
 }
 
 
@@ -138,7 +158,16 @@ input[type="date"]{
     width: 100%;
 }
 
-.create-form a{
+.register-form button{
+    transition: all 0.5s;
+}
+
+.register-form button:hover{
+    transform: scale(1.02);
+    background-color: rgb(35, 35, 220);
+}
+
+.register-form a{
     text-decoration: none;
 }
 
@@ -189,6 +218,12 @@ input[type="date"]{
     .form-div label{
         display: block;
     }
+
+    #div-checkbox label{
+        font-size: 18px;
+    }
+
+    
 }
 
 

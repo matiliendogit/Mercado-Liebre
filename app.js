@@ -19,6 +19,10 @@ app.get('/login', (req, res) => {
     res.sendFile(path.join(__dirname, '/views/login.html'));
 });
 
+app.get('/create-product', (req, res) => {
+    res.sendFile(path.join(__dirname, '/views/create-product.html'));
+});
+
 app.listen(3001, () => {
     console.log('Server on-line on port 3001');
 });
