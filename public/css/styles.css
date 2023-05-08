@@ -48,6 +48,7 @@ body{
     text-align: center;
     font-weight: 600;
     font-size: 17px;
+    margin: auto;
 }
 
 .copy-header i{
@@ -55,10 +56,16 @@ body{
     font-size: 1.2em;
 }
 
+.main-top-bar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
 .header-search{
-    width: 300px;
+    width: 30%;
     height: 36px;
-    display: none;
+    display: flex;
     border: solid 1px #666;
     border-radius: 5px;
     background-color: white;
@@ -67,7 +74,7 @@ body{
 }
 
 #input-buscador-header{
-    width: 250px;
+    width: 70%;
     height: 34px;
     border: none;
     border-radius: 5px;
@@ -139,8 +146,8 @@ body{
     padding: 0px;
     margin-bottom: 0px;
     width: 100%;
-    height: 20%;
-    margin-top: 188px;
+    height: 40vh;
+    margin-top: 178px;
 }
 
 .banner img{
@@ -387,15 +394,25 @@ footer section{
         justify-content: space-between;
         align-items: center;
         height: 78px;
+        flex-wrap: nowrap;
     }
 
     .header-search{
+        width: 300px;
+        height: 36px;
         display: flex;
+        border: solid 1px #666;
+        border-radius: 5px;
+        background-color: white;
+        margin: 0px;
+        padding-left: 2px; 
     }
 
     .copy-header{
-        max-width: 250px;
+        max-width: 220px;
         text-align: right;
+        margin-right: 3px;
+        margin-left: 10vh;
     }
 
     .hamburguer-button{
@@ -409,7 +426,6 @@ footer section{
     }
 
     .main-top-bar, .main-navbar{
-        max-width: 1200px;
         margin: auto;
     }
 
@@ -446,7 +462,7 @@ footer section{
     }
 
     .copy-header{
-        max-width: none;
+        width: 220px;
         font-size: 20px;
         margin: 0px;
     }

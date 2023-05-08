@@ -16,7 +16,7 @@
 
         <div class="main-top-bar">
 
-            <img class="logo" src="/img/logo-mercado-liebre.svg" alt="Logo de Mercado Libre">
+            <a href="/"><img class="logo" src="/img/logo-mercado-liebre.svg" alt="Logo de Mercado Libre"></a>
             
             <div class="header-search">
                     
@@ -40,7 +40,7 @@
         <nav class="main-navbar">
 
             <ul class="navbar">
-                <li><a href="#">Ofertas</a></li>
+                <li><a href="/#ofertas">Ofertas</a></li>
                 <li><a href="#">Tiendas Oficiales</a></li>
                 <li><a href="#">Vender</a></li>
                 <li><a href="#">Ayuda</a></li>
@@ -60,7 +60,7 @@
 
     <main>
 
-        <h3>Ingresa a tu cuenta</h3>
+        <h3>Ingresá a tu cuenta</h3>
         
         <form action="/" method="get" class="create-form">
 
@@ -68,15 +68,15 @@
                 <label for="user-name">Nombre de Usuario</label>
                 <input type="text" name="user-name" id="user-name" placeholder="Nombre de usuario" class="form-inputs">
             </div>
-           
+            <span id="user-name-error" class="error-message">El nombre debe tener al menos 3 caracteres</span>
+            
             <div class="form-div">
                 <label>Introduzca su contraseña:</label>
                 <input type="password" name="password" placeholder="Contraseña" class="form-inputs">
             </div>
-
+            
             <button type="submit" class="form-button-submit">Login</button>
 
-            <div id="error-nombre" style="display:none;color:red;">El nombre debe tener al menos dos caracteres</div>
        
         </form>
 

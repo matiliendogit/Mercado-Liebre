@@ -40,7 +40,21 @@ h3{
     padding: 8px;
     border-radius: 15px;
     border: 0;
+    transition: all 0.2s;
 
+}
+
+.form-inputs:hover{
+    box-shadow: 0px 0px 10px rgba( 100 , 100 , 100);
+}
+
+.form-inputs:focus{
+    outline:solid 2px #39b54a;
+    transform: scale(1.1);
+}
+
+input[type="date"]{
+    cursor: pointer;
 }
 
 #div-radio{
@@ -112,6 +126,7 @@ h3{
 }
 
 .form-button-submit{
+    display: block;
     background-color: #39b54a;
     border: none;
     color: white;
@@ -120,7 +135,15 @@ h3{
     border-radius: 8px;
     box-shadow: 0px 0px 10px rgba( 100 , 100 , 100);
     margin: 8px 0;
+    width: 100%;
 }
+
+.create-form a{
+    text-decoration: none;
+}
+
+
+
 
 
 /* -----------MEDIA QUERIES----------- */
