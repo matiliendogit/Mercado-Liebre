@@ -23,6 +23,8 @@ app.get('/create-product', (req, res) => {
     res.sendFile(path.join(__dirname, '/views/create-product.html'));
 });
 
-app.listen(3001, () => {
-    console.log('Server on-line on port 3001');
+const port =process.env.PORT || 3001;
+
+app.listen(port, () => {
+    console.log(`Server on-line on port ${port}`);
 });
